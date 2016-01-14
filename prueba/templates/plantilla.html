@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/static/home.css">
+	<link href="https://file.myfontastic.com/BUNUK4iyyhi4VSPcCozeCS/icons.css" rel="stylesheet">
+	<title>{%block title %}Home{% endblock %}</title>
+</head>
+<body>
+	<header>
+		<div class="content-header">
+			<h1>Bloganto</h1>
+			
+		<nav>
+			<ul>
+				<li><a href="#">Cursos</a></li>
+				<li><a href="#">Tutoriales</a></li>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">Acerca</a></li>
+				
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<section>
+		{% block content%} {%endblock%}
+	</section>
+	<footer>
+		<div class="row">
+			<div class="column redes-sociales">
+				<h1>Mis redes sociales</h1>
+				<ul>
+					<li><span class='icon-facebook'></span></li>
+					<li><span class='icon-twitter'></span></li>
+					<li><span class='icon-instagram'></span></li>
+					<li><span class='icon-github'></span></li>
+				</ul>
+			</div>
+			<div class="column">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae similique, tempora reprehenderit odio libero consequuntur incidunt aut velit natus tempore hic voluptas illum reiciendis dolorem accusantium corporis laudantium. Dignissimos, nobis.
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

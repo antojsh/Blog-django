@@ -1,0 +1,22 @@
+{% extends "plantilla.html"%}
+{% block title%} Blog {%endblock%}
+{% block content%}
+	{% for articulo in articulos %}
+	<article class='content-articulos'>
+		<img src="http://www.politicaysociedad.net/wp-content/uploads/2014/05/frases-mujeres.jpg" align="middle" alt="">
+		<div class="content-articulo">
+			<div class="articulo-header">
+				<h1>{{articulo.nombre}}</h1>
+			</div>
+			<div class="articulo-content">
+				
+				<p>{{articulo.descripcion}}</p>
+				<small>{{articulo.fecha}}</small>
+				<small>{{articulo.usuario.nombre}}</small>
+			</div>
+		</div>
+	</article>
+
+	{% endfor%}
+{% endblock %}
+
