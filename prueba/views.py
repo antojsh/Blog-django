@@ -5,7 +5,7 @@ from django.contrib import admin
 from django.template import RequestContext
 from prueba.forms import crearArticulo
 from django.utils import timezone
-# Create your views here.
+# Create your views here. Prueba de Vistas
 
 def index(req):
 	Articulos = articulos.objects.all()
